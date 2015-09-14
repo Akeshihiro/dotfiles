@@ -22,6 +22,9 @@ shopt -s checkwinsize
 # Enable history appending instead of overwriting. #139609
 shopt -s histappend
 
+HISTSIZE=10000
+HISTFILESIZE=$HISTSIZE
+
 # Change the window title of X terminals 
 case ${TERM} in
 	xterm*|rxvt*|Eterm|aterm|kterm|gnome*|interix)

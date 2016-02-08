@@ -17,6 +17,3 @@ set number
 set tabstop=4
 set expandtab
 syntax on
-
-autocmd Filetype gitcommit setlocal textwidth=72
-

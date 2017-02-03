@@ -193,3 +193,4 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 # Screen lock
 bindsym Ctrl+Mod4+Mod1+l exec slock
 
+exec setxkbmap de

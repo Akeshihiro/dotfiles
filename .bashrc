@@ -36,7 +36,7 @@ shopt -s histappend
 # the history will halt the shell prompt until it's finished.
 #PROMPT_COMMAND='history -a'
 
-HISTSIZE=10000
+HISTSIZE=100000
 HISTFILESIZE=${HISTSIZE}
 
 export EDITOR=vim

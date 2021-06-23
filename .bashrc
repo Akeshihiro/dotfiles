@@ -112,6 +112,10 @@ for sh in /etc/bash/bashrc.d/* ; do
 	[[ -r ${sh} ]] && source "${sh}"
 done
 
+if [ -d "$(go env GOPATH)/bin" ] ; then
+    export PATH="$(go env GOPATH)/bin":${PATH}
+fi
+
 if [ -d ~/bin ] ; then
     export PATH=~/bin:${PATH}
 fi

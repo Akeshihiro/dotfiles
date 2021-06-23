@@ -39,7 +39,8 @@ shopt -s histappend
 HISTSIZE=100000
 HISTFILESIZE=${HISTSIZE}
 
-export EDITOR=vim
+export EDITOR=nvim
+export VISUAL=nvim
 export PAGER=less
 
 # Change the window title of X terminals 
@@ -113,6 +114,10 @@ done
 
 if [ -d ~/bin ] ; then
     export PATH=~/bin:${PATH}
+fi
+
+if ( which nvim ) ; then
+    alias vim='nvim'
 fi
 
 # Try to keep environment pollution down, EPA loves us.

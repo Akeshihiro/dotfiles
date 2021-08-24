@@ -120,7 +120,7 @@ if [ -d ~/bin ] ; then
     export PATH=~/bin:${PATH}
 fi
 
-if ( which nvim ) ; then
+if ( which nvim >/dev/null 2>&1 ) ; then
     alias vim='nvim'
 fi
 

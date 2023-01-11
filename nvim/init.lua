@@ -1,1 +1,1 @@
-require('configs.default')
+require('config.default')

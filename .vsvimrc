@@ -18,19 +18,23 @@ noremap <C-c> <Esc>
 
 " Find stuff
 noremap <Leader>fa :vsc ReSharper.ReSharper_GotoAction<CR>
+
 noremap <Leader>fe :vsc ReSharper.ReSharper_GotoType<CR>
 noremap <Leader>ff :vsc ReSharper.ReSharper_GotoFile<CR>
 noremap <Leader>fs :vsc ReSharper.ReSharper_GotoSymbol<CR>
+noremap <Leader>fm :vsc ReSharper.ReSharper_GotoFileMember<CR>
 
 " Navigate
 noremap gd :vsc ReSharper.ReSharper_GotoDeclaration<CR>
-" todo go to references shift+alt+f12
-" todo go to implementations alt+end
-" todo go to base class alt+home
-" todo go to prev / next error shift+alt+pgup/pgdown
-" todo go to prev / next issue alt+pgup/pgdown
+noremap gr :vsc ReSharper.ReSharper_ShowUsages<CR>
+noremap gi :vsc ReSharper.ReSharper_GotoImplementations<CR>
+noremap gI :vsc ReSharper.ReSharper_GotoBase<CR>
 noremap [m :vsc ReSharper.ReSharper_GotoPrevMember<CR>
 noremap ]m :vsc ReSharper.ReSharper_GotoNextMember<CR>
+noremap [d :vsc ReSharper.ReSharper_GotoPrevHighlight<CR>
+noremap ]d :vsc ReSharper.ReSharper_GotoNextHighlight<CR>
+noremap [e :vsc ReSharper.ReSharper_GotoPrevErrorInSolution<CR>
+noremap ]e :vsc ReSharper.ReSharper_GotoNextErrorInSolution<CR>
 
 noremap gp :vsc ReSharper.ReSharper_PeekDefinition<CR>
 
@@ -44,3 +48,5 @@ noremap <Leader>rf :vsc ReSharper.ReSharper_IntroduceField<CR>
 noremap <Leader>rp :vsc ReSharper.ReSharper_IntroduceParameter<CR>
 noremap <Leader>rm :vsc ReSharper.ReSharper_ExtractMethod<CR>
 
+" Comment / Uncomment code
+vnoremap gc :vsc ReSharper.ReSharper_LineComment<CR>

@@ -1,15 +1,14 @@
 let mapleader = " "
 let maplocalleader = " "
 
-set ignorecase
 set number
 set relativenumber
 set nohlsearch
 set incsearch
-set undofile
 set ignorecase
 set smartcase
 
+set undofile
 set mouse=a
 
 " Map ctrl+c to Esc

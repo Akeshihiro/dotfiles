@@ -24,9 +24,39 @@ set mouse=a
 
 noremap <C-c> <Esc>
 
+" Find stuff
 noremap <Leader>fa :action GotoAction<CR>
 noremap <Leader>fe :action SearchEverywhere<CR>
 
 noremap <Leader>ff :action GotoFile<CR>
 noremap <Leader>fs :action GotoSymbol<CR>
 noremap <Leader>ft :action GotoType<CR>
+
+" Navigate
+noremap gd :action GotoDeclaration<CR>
+noremap gr :action ShowUsages<CR>
+noremap gi :action GotoImplementation<CR>
+"noremap gI :action GotoBase<CR>
+noremap [m :action MethodUp<CR>
+noremap ]m :action MethodDown<CR>
+"noremap [d :action GotoPrevHighlight<CR>
+"noremap ]d :action GotoNextHighlight<CR>
+noremap [e :action GotoPrevError<CR>
+noremap ]e :action GotoNextError<CR>
+
+noremap gp :action QuickImplementations<CR>
+
+" Refactor stuff
+noremap <Leader>rt :action Refactorings.QuickListPopupAction<CR>
+noremap <Leader>rr :action RenameElement<CR>
+noremap <Leader>rs :action ChangeSignature<CR>
+
+noremap <Leader>rv :action IntroduceVariable<CR>
+noremap <Leader>rf :action IntroduceField<CR>
+noremap <Leader>rc :action IntroduceConstant<CR>
+noremap <Leader>rp :action IntroduceParameter<CR>
+noremap <Leader>rm :action ExtractMethod<CR>
+noremap <Leader>ri :action Inline<CR>
+
+" Comment / Uncomment code
+vnoremap gc :action CommentByLineComment<CR>

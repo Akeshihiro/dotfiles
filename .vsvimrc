@@ -1,0 +1,46 @@
+let mapleader = " "
+let maplocalleader = " "
+
+set ignorecase
+set number
+set relativenumber
+set nohlsearch
+set incsearch
+set undofile
+set ignorecase
+set smartcase
+
+set mouse=a
+
+" Map ctrl+c to Esc
+" Could be helpfull, but we'll see.
+noremap <C-c> <Esc>
+
+" Find stuff
+noremap <Leader>fa :vsc ReSharper.ReSharper_GotoAction<CR>
+noremap <Leader>fe :vsc ReSharper.ReSharper_GotoType<CR>
+noremap <Leader>ff :vsc ReSharper.ReSharper_GotoFile<CR>
+noremap <Leader>fs :vsc ReSharper.ReSharper_GotoSymbol<CR>
+
+" Navigate
+noremap gd :vsc ReSharper.ReSharper_GotoDeclaration<CR>
+" todo go to references shift+alt+f12
+" todo go to implementations alt+end
+" todo go to base class alt+home
+" todo go to prev / next error shift+alt+pgup/pgdown
+" todo go to prev / next issue alt+pgup/pgdown
+noremap [m :vsc ReSharper.ReSharper_GotoPrevMember<CR>
+noremap ]m :vsc ReSharper.ReSharper_GotoNextMember<CR>
+
+noremap gp :vsc ReSharper.ReSharper_PeekDefinition<CR>
+
+" Refactor stuff
+noremap <Leader>rt :vsc ReSharper.ReSharper_RefactorThis<CR>
+noremap <Leader>rr :vsc ReSharper.ReSharper_Rename<CR>
+noremap <Leader>rs :vsc ReSharper.ReSharper_ChangeSignature<CR>
+
+noremap <Leader>rv :vsc ReSharper.ReSharper_IntroVariable<CR>
+noremap <Leader>rf :vsc ReSharper.ReSharper_IntroduceField<CR>
+noremap <Leader>rp :vsc ReSharper.ReSharper_IntroduceParameter<CR>
+noremap <Leader>rm :vsc ReSharper.ReSharper_ExtractMethod<CR>
+

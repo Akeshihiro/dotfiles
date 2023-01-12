@@ -1,0 +1,32 @@
+"" Source your .vimrc
+"source ~/.vimrc
+
+let mapleader = " "
+let maplocalleader = " "
+
+set number
+set relativenumber
+set nohlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+set undofile
+set mouse=a
+
+" Remap keystrokes
+"
+" Example:
+" noremap <Leader>fa :action GotoAction<CR>
+"
+" Find actions by vim command
+" :actionlist pattern
+
+noremap <C-c> <Esc>
+
+noremap <Leader>fa :action GotoAction<CR>
+noremap <Leader>fe :action SearchEverywhere<CR>
+
+noremap <Leader>ff :action GotoFile<CR>
+noremap <Leader>fs :action GotoSymbol<CR>
+noremap <Leader>ft :action GotoType<CR>

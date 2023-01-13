@@ -50,3 +50,11 @@ noremap <Leader>rm :vsc ReSharper.ReSharper_ExtractMethod<CR>
 
 " Comment / Uncomment code
 vnoremap gc :vsc ReSharper.ReSharper_LineComment<CR>
+
+" Format / Clean up code
+noremap <Leader>cf :vsc ReSharper.ReSharper_ReformatCode<CR>
+noremap <Leader>cc :vsc ReSharper.ReSharper_SilentCleanupCode<CR>
+
+" Build Solution
+noremap <Leader>bb :vsc Build.BuildSolution<CR>
+noremap <Leader>br :vsc Build.RebuildSolution<CR>

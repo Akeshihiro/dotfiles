@@ -19,6 +19,7 @@ noremap <C-c> <Esc>
 noremap <Leader>fa :vsc ReSharper.ReSharper_GotoAction<CR>
 
 noremap <Leader>fe :vsc ReSharper.ReSharper_GotoType<CR>
+noremap <Leader>ft :vsc ReSharper.ReSharper_GotoType<CR>
 noremap <Leader>ff :vsc ReSharper.ReSharper_GotoFile<CR>
 noremap <Leader>fs :vsc ReSharper.ReSharper_GotoSymbol<CR>
 noremap <Leader>fm :vsc ReSharper.ReSharper_GotoFileMember<CR>

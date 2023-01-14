@@ -11,7 +11,6 @@ set incsearch
 set scrolloff=3
 set mouse=a
 
-set undodir=~/.vimdid
 set undofile
 
 let mapleader = " "

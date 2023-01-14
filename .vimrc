@@ -8,9 +8,9 @@ set expandtab
 set autoindent
 set nohlsearch
 set incsearch
-set scrolloff=3
-set mouse=a
+" set scrolloff=3
 
+set mouse=a
 set undofile
 
 let mapleader = " "

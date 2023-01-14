@@ -17,6 +17,4 @@ set undofile
 let mapleader = " "
 let maplocalleader = " "
 
-inoremap <C-c> <Esc>
-vnoremap <C-c> <Esc>
-nnoremap <C-c> <Esc>
+noremap <C-c> <Esc>

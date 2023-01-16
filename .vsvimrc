@@ -55,6 +55,8 @@ vnoremap gc :vsc ReSharper.ReSharper_LineComment<CR>
 noremap <Leader>cf :vsc ReSharper.ReSharper_ReformatCode<CR>
 noremap <Leader>cc :vsc ReSharper.ReSharper_SilentCleanupCode<CR>
 
+noremap <Leader>ca :vsc View.QuickActions<CR>
+
 " Build Solution
 noremap <Leader>bb :vsc Build.BuildSolution<CR>
 noremap <Leader>br :vsc Build.RebuildSolution<CR>

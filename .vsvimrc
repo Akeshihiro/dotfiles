@@ -60,3 +60,8 @@ noremap <Leader>ca :vsc View.QuickActions<CR>
 " Build Solution
 noremap <Leader>bb :vsc Build.BuildSolution<CR>
 noremap <Leader>br :vsc Build.RebuildSolution<CR>
+
+" Run Tests
+noremap <Leader>ta :vsc ReSharper.ReSharper_UnitTestRunSolution<CR>
+noremap <Leader>tc :vsc ReSharper.ReSharper_UnitTestRunFromContext<CR>
+noremap <Leader>tr :vsc ReSharper.ReSharper_UnitTestSessionRepeatPreviousRun<CR>

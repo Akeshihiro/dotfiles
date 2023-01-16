@@ -28,6 +28,10 @@ noremap <Leader>fs :vsc ReSharper.ReSharper_GotoSymbol<CR>
 noremap <Leader>fm :vsc ReSharper.ReSharper_GotoFileMember<CR>
 
 " Navigate
+noremap gs ^
+noremap gh 0
+noremap gl $
+
 noremap gd :vsc ReSharper.ReSharper_GotoDeclaration<CR>
 noremap gr :vsc ReSharper.ReSharper_ShowUsages<CR>
 noremap gi :vsc ReSharper.ReSharper_GotoImplementations<CR>

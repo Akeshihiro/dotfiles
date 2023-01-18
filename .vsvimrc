@@ -55,6 +55,9 @@ noremap <Leader>rf :vsc ReSharper.ReSharper_IntroduceField<CR>
 noremap <Leader>rp :vsc ReSharper.ReSharper_IntroduceParameter<CR>
 noremap <Leader>rm :vsc ReSharper.ReSharper_ExtractMethod<CR>
 
+" This also inlines methods, but the name is somewhat stupid
+noremap <Leader>ri :vsc ReSharper.ReSharper_InlineVariable<CR>
+
 " Comment / Uncomment code
 vnoremap gc :vsc ReSharper.ReSharper_LineComment<CR>
 

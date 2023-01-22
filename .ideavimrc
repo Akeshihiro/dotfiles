@@ -26,6 +26,11 @@ set mouse=a
 " Could be helpfull, but we'll see.
 noremap <C-c> <Esc>
 
+" Disable some keys
+noremap <Space> <Nop>
+noremap <CR> <Nop>
+noremap <BS> <Nop>
+
 " System clipboard and other useful stuff
 noremap <Leader>y "+y
 nnoremap <Leader>y "+yy

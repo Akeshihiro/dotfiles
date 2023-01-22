@@ -23,3 +23,15 @@ vim.keymap.set("n", "j", "v:count == 0 ? \"gj\" : \"j\"", { expr = true, silent 
 vim.keymap.set("", "gh", "0", { silent = true })
 vim.keymap.set("", "gs", "^", { silent = true })
 vim.keymap.set("", "gl", "$", { silent = true })
+
+-- System clipboard and other useful stuff
+vim.keymap.set("", "<Leader>y", "\"+y", { silent = true })
+vim.keymap.set("n", "<Leader>y", "\"+yy", { silent = true })
+
+vim.keymap.set("", "<Leader>p", "\"_dP", { silent = true })
+vim.keymap.set("", "<Leader>P", "\"_d\"+P", { silent = true })
+vim.keymap.set("n", "<Leader>p", "\"+p", { silent = true })
+vim.keymap.set("n", "<Leader>P", "\"+P", { silent = true })
+
+vim.keymap.set("", "<Leader>d", "\"_d", { silent = true })
+vim.keymap.set("n", "<Leader>d", "\"_dd", { silent = true })

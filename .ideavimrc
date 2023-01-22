@@ -33,6 +33,10 @@ noremap <Leader>fs :action GotoSymbol<CR>
 noremap <Leader>ft :action GotoType<CR>
 
 " Navigate
+noremap gs ^
+noremap gh 0
+noremap gl $
+
 noremap gd :action GotoDeclaration<CR>
 noremap gr :action ShowUsages<CR>
 noremap gi :action GotoImplementation<CR>

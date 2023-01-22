@@ -60,3 +60,15 @@ noremap <Leader>ri :action Inline<CR>
 
 " Comment / Uncomment code
 vnoremap gc :action CommentByLineComment<CR>
+
+" Format / Clean up code
+" TODO
+
+" Show Quick Fixes / Code Actions
+" TODO
+
+" Build project
+" TODO
+
+" Run tests
+" TODO

@@ -55,6 +55,9 @@ noremap gs ^
 noremap gh 0
 noremap gl $
 
+noremap j jzz
+noremap k kzz
+
 noremap gd :action GotoDeclaration<CR>
 noremap gr :action ShowUsages<CR>
 noremap gi :action GotoImplementation<CR>

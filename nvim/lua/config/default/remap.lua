@@ -24,6 +24,9 @@ vim.keymap.set("", "gh", "0", { silent = true })
 vim.keymap.set("", "gs", "^", { silent = true })
 vim.keymap.set("", "gl", "$", { silent = true })
 
+vim.keymap.set("", "j", "jzz", { silent = true })
+vim.keymap.set("", "k", "kzz", { silent = true })
+
 -- System clipboard and other useful stuff
 vim.keymap.set("", "<Leader>y", "\"+y", { silent = true })
 vim.keymap.set("n", "<Leader>y", "\"+yy", { silent = true })

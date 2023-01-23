@@ -12,22 +12,6 @@ set smartcase
 " Could be helpfull, but we'll see.
 noremap <C-c> <Esc>
 
-" Disable some keys
-noremap <Space> <Nop>
-noremap <CR> <Nop>
-noremap <BS> <Nop>
-
-" System clipboard and other useful stuff
-noremap <Leader>y "+y
-nnoremap <Leader>y "+yy
-noremap <Leader>p "_dP
-noremap <Leader>P "_d"+P
-nnoremap <Leader>p "+p
-nnoremap <Leader>P "+P
-
-noremap <Leader>d "_d
-nnoremap <Leader>d "_dd
-
 " Show Docs
 noremap <S-k> :vsc Edit.QuickInfo<CR>
 
@@ -44,6 +28,9 @@ noremap <Leader>fm :vsc ReSharper.ReSharper_GotoFileMember<CR>
 noremap gs ^
 noremap gh 0
 noremap gl $
+
+noremap j jzz
+noremap k kzz
 
 noremap gd :vsc ReSharper.ReSharper_GotoDeclaration<CR>
 noremap gr :vsc ReSharper.ReSharper_ShowUsages<CR>

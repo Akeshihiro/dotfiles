@@ -20,6 +20,22 @@ set undofile
 " Some helpful mappings
 noremap <C-c> <Esc>
 
+" Disable some keys
+noremap <Space> <Nop>
+noremap <CR> <Nop>
+noremap <BS> <Nop>
+
+" System clipboard and other useful stuff
+noremap <Leader>y "+y
+nnoremap <Leader>y "+yy
+noremap <Leader>p "_dP
+noremap <Leader>P "_d"+P
+nnoremap <Leader>p "+p
+nnoremap <Leader>P "+P
+
+noremap <Leader>d "_d
+nnoremap <Leader>d "_dd
+
 " Navigate
 noremap gs ^
 noremap gh 0

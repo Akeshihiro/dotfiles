@@ -16,6 +16,9 @@ vim.o.incsearch = true
 vim.wo.number = true
 vim.wo.relativenumber = true
 
+-- Keep some space at the top and at the bottom of the view
+vim.o.scrolloff = 5
+
 -- Enable mouse mode
 vim.o.mouse = "a"
 
@@ -28,6 +31,9 @@ vim.o.undofile = true
 -- Case insensitive searching UNLESS /C or capital in search
 vim.o.ignorecase = true
 vim.o.smartcase = true
+
+-- Highlight the active line
+vim.o.cursorline = true
 
 -- Decrease update time
 vim.o.updatetime = 250

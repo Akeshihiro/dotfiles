@@ -25,3 +25,5 @@ end
 if which helix >/dev/null 2>&1
     alias hx=helix
 end
+
+fish_add_path ~/nvm-rust/shims

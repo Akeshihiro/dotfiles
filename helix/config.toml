@@ -7,6 +7,7 @@ line-number = "relative"
 cursorline = true
 auto-completion = false
 auto-format = false
+auto-pairs = false
 
 [editor.file-picker]
 hidden = false

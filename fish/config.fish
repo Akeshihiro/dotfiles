@@ -23,6 +23,12 @@ fish_add_path ~/bin
 if which nvim >/dev/null 2>&1
     alias vim=nvim
 end
+if which hx >/dev/null 2>&1
+    set -gx EDITOR hx
+    set -gx VISUAL $EDITOR
+end
 if which helix >/dev/null 2>&1
     alias hx=helix
+    set -gx EDITOR helix
+    set -gx VISUAL $EDITOR
 end

@@ -7,7 +7,6 @@ set -gx EDITOR nvim
 set -gx VISUAL $EDITOR
 set -gx TERM xterm-256color
 
-fish_add_path ~/nvm-rust/shims
 fish_add_path ~/.dotnet/tools
 if [ -d "/usr/lib/jvm/default" ]
     set -gx JAVA_HOME /usr/lib/jvm/default

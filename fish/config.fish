@@ -35,3 +35,7 @@ if which rtx >/dev/null 2>&1
     rtx activate fish | source
     rtx complete --shell fish | source
 end
+if which opam >/dev/null 2>&1
+    # opam configuration
+    source ~/.opam/opam-init/init.fish >/dev/null 2>&1; or true
+end

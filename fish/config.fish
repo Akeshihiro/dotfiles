@@ -31,3 +31,7 @@ if which helix >/dev/null 2>&1
     set -gx EDITOR helix
     set -gx VISUAL $EDITOR
 end
+if which rtx >/dev/null 2>&1
+    rtx activate fish | source
+    rtx complete --shell fish | source
+end

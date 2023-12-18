@@ -12,8 +12,7 @@ require("packer").startup(function(use)
   use "wbthomason/packer.nvim"
 
   use {
-    "j-hui/fidget.nvim",
-    tag = "legacy"
+    "j-hui/fidget.nvim"
   }
 
   use { -- LSP Configuration & Plugins

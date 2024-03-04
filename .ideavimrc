@@ -23,7 +23,7 @@ set mouse=a
 " :actionlist pattern
 
 " Map ctrl+c to Esc
-" Could be helpfull, but we'll see.
+" Could be helpful, but we'll see.
 noremap <C-c> <Esc>
 
 " Disable some keys

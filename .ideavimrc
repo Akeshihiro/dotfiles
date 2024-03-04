@@ -94,7 +94,7 @@ vnoremap gc :action CommentByLineComment<CR>
 
 " Format / Clean up code
 noremap <Leader>cf :action ReformatCode<CR>
-noremap <Leader>cc :action CodeCleanup<CR>
+noremap <Leader>cc :action SilentCodeCleanup<CR>
 
 " Show Quick Fixes / Code Actions
 noremap <Leader>ca :action ShowIntentionActions<CR>

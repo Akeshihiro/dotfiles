@@ -47,7 +47,7 @@ require("packer").startup(function(use)
     after = "nvim-treesitter",
   }
 
-  use { -- Dracula theme 
+  use { -- Dracula theme
     "dracula/vim",
     as = "dracula"
   }

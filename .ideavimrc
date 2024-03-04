@@ -42,13 +42,19 @@ nnoremap <Leader>P "+P
 noremap <Leader>d "_d
 nnoremap <Leader>d "_dd
 
+" Show Docs
+" Not needed as ideavim seems to work just fine already
+"noremap <S-k> :action Documentation.ShowExternal<CR>
+
 " Find stuff
 noremap <Leader>fa :action GotoAction<CR>
-noremap <Leader>fe :action SearchEverywhere<CR>
 
+noremap <Leader>fe :action SearchEverywhere<CR>
+noremap <Leader>ft :action GotoType<CR>
 noremap <Leader>ff :action GotoFile<CR>
 noremap <Leader>fs :action GotoSymbol<CR>
-noremap <Leader>ft :action GotoType<CR>
+" Seems not to work
+"noremap <Leader>fm :action GotoFileMember<CR>
 
 " Navigate
 noremap gs ^
@@ -78,22 +84,26 @@ noremap <Leader>rs :action ChangeSignature<CR>
 
 noremap <Leader>rv :action IntroduceVariable<CR>
 noremap <Leader>rf :action IntroduceField<CR>
-noremap <Leader>rc :action IntroduceConstant<CR>
 noremap <Leader>rp :action IntroduceParameter<CR>
 noremap <Leader>rm :action ExtractMethod<CR>
+
 noremap <Leader>ri :action Inline<CR>
 
 " Comment / Uncomment code
 vnoremap gc :action CommentByLineComment<CR>
 
 " Format / Clean up code
-" TODO
+noremap <Leader>cf :action ReformatCode<CR>
+noremap <Leader>cc :action CodeCleanup<CR>
 
 " Show Quick Fixes / Code Actions
-" TODO
+noremap <Leader>ca :action ShowIntentionActions<CR>
 
 " Build project
-" TODO
+noremap <Leader>bb :action BuildSolutionAction<CR>
+noremap <Leader>br :action RebuildSolutionAction<CR>
 
 " Run tests
-" TODO
+noremap <Leader>ta :action RiderUnitTestRunSolutionAction<CR>
+noremap <Leader>tc :action RiderUnitTestRunContextAction<CR>
+noremap <Leader>tr :action RiderUnitTestRepeatPreviousRunAction<CR>

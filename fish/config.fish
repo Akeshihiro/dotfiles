@@ -39,3 +39,7 @@ if which opam >/dev/null 2>&1
     # opam configuration
     source ~/.opam/opam-init/init.fish >/dev/null 2>&1; or true
 end
+
+if which starship >/dev/null 2>&1
+    starship init fish | source
+end

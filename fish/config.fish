@@ -43,3 +43,6 @@ end
 if which starship >/dev/null 2>&1
     starship init fish | source
 end
+if which zoxide >/dev/null 2>&1
+    zoxide init fish | source
+end

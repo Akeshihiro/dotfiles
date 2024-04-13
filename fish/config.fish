@@ -45,4 +45,6 @@ if which starship >/dev/null 2>&1
 end
 if which zoxide >/dev/null 2>&1
     zoxide init fish | source
+    alias cd=z
+    alias cdi=zi
 end

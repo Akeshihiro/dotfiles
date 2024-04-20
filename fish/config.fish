@@ -32,6 +32,10 @@ if which helix >/dev/null 2>&1
     set -gx VISUAL $EDITOR
 end
 
+if which bat >/dev/null 2>&1
+    set -gx BAT_THEME Dracula
+end
+
 if which rtx >/dev/null 2>&1
     rtx activate fish | source
     rtx complete --shell fish | source

@@ -48,3 +48,6 @@ if which zoxide >/dev/null 2>&1
     alias cd=z
     alias cdi=zi
 end
+if which fzf >/dev/null 2>&1
+    fzf --fish | source
+end

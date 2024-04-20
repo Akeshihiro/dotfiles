@@ -56,3 +56,6 @@ end
 if which fzf >/dev/null 2>&1
     fzf --fish | source
 end
+if which eza >/dev/null 2>&1
+    alias ls=eza
+end

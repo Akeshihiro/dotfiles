@@ -33,6 +33,7 @@ if which helix >/dev/null 2>&1
 end
 
 if which bat >/dev/null 2>&1
+    # Also used by the delta tool
     set -gx BAT_THEME Dracula
 end
 

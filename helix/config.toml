@@ -8,6 +8,7 @@ cursorline = true
 auto-completion = false
 auto-format = false
 auto-pairs = false
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer"]
 
 [editor.file-picker]
 hidden = false

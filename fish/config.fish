@@ -37,9 +37,9 @@ if which bat >/dev/null 2>&1
     set -gx BAT_THEME Dracula
 end
 
-if which rtx >/dev/null 2>&1
-    rtx activate fish | source
-    rtx complete --shell fish | source
+if which mise >/dev/null 2>&1
+    mise activate fish | source
+    mise complete --shell fish | source
 end
 if which opam >/dev/null 2>&1
     source ~/.opam/opam-init/init.fish >/dev/null 2>&1; or true

@@ -91,3 +91,9 @@ noremap <Leader>br :vsc Build.RebuildSolution<CR>
 noremap <Leader>ta :vsc ReSharper.ReSharper_UnitTestRunSolution<CR>
 noremap <Leader>tc :vsc ReSharper.ReSharper_UnitTestRunFromContext<CR>
 noremap <Leader>tr :vsc ReSharper.ReSharper_UnitTestSessionRepeatPreviousRun<CR>
+
+" Github Copilot Integration
+noremap <Leader>ac :vsc View.GitHub.Copilot.Chat<CR>
+noremap <Leader>aic :vsc Ask.Copilot<CR>
+noremap <Leader>an :vsc Edit.NextSuggestion<CR>
+noremap <Leader>ap :vsc Edit.PreviousSuggestion<CR>

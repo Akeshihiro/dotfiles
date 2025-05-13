@@ -16,8 +16,17 @@ fish_add_path ~/.cargo/bin
 if which go >/dev/null 2>&1
     fish_add_path (go env GOPATH)/bin
 end
+fish_add_path ~/go/bin
 fish_add_path ~/.local/bin
 fish_add_path ~/bin
+
+if which mise >/dev/null 2>&1
+    mise activate fish | source
+    mise complete --shell fish | source
+end
+if which opam >/dev/null 2>&1
+    source ~/.opam/opam-init/init.fish >/dev/null 2>&1; or true
+end
 
 if which nvim >/dev/null 2>&1
     alias vim=nvim
@@ -35,14 +44,6 @@ end
 if which bat >/dev/null 2>&1
     # Also used by the delta tool
     set -gx BAT_THEME Dracula
-end
-
-if which mise >/dev/null 2>&1
-    mise activate fish | source
-    mise complete --shell fish | source
-end
-if which opam >/dev/null 2>&1
-    source ~/.opam/opam-init/init.fish >/dev/null 2>&1; or true
 end
 
 if which starship >/dev/null 2>&1

@@ -13,6 +13,13 @@ if [ -d "/usr/lib/jvm/default" ]
     set -gx JAVA_HOME /usr/lib/jvm/default
     fish_add_path $JAVA_HOME/bin
 end
+if which brew >/dev/null 2>&1
+    if which rustup >/dev/null 2>&1
+        if not which cargo >/dev/null 2>&1
+            fish_add_path (brew --prefix rustup)/bin
+        end
+    end
+end
 fish_add_path ~/.cargo/bin
 if which go >/dev/null 2>&1
     fish_add_path (go env GOPATH)/bin

@@ -68,3 +68,8 @@ end
 if which eza >/dev/null 2>&1
     alias ls=eza
 end
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/link/.lmstudio/bin
+# End of LM Studio CLI section
+
